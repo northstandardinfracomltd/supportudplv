@@ -110,11 +110,84 @@
                          font-family: "Lato" !important;
           font-weight: 500;
                 text-align: center;
-                text-decoration: none !important;
+                text-decoration: none;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 20px !important;
         }
 
       
+                    .sublink:hover {
+                text-decoration: underline;
+        }
       
+      
+      
+                    .sublink2 {
+              color: rgb(58, 136, 189) !important;
+            cursor: pointer;
+                font-size: 16px;
+                         font-family: "Lato" !important;
+          font-weight: 500;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+                height: 80px;
+                margin-top: 20px !important;
+        }
+
+      
+                    .sublink2:hover {
+                text-decoration: underline;
+        }
+      
+      
+            
+                    .unesko {
+             margin-top: 20px;
+        }
+      
+      
+      
+      
+.sticky-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4fbff;
+  border-top: #3a88bd21 1px solid;
+  color: #fff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(58, 136, 189);
+                  font-size: 16px;
+font-family: "Lato" !important;
+          font-weight: 500;
+line-height: 22px;
+
+}
+
+.btnf {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btnf:hover {
+  background-color: #0056b3;
+}
     </style>
 </head>
 <body>
@@ -122,11 +195,22 @@
         <img src="https://cdn.glitch.global/93642f69-8320-43b9-bb12-a040943358e2/Logo%20UDPLV%20-%20FOND%20BLANC.png?v=1710512590535" alt="Image" class="udplv">
         <a href="/enregistrement/formulaire" class="button">Contacter le support</a>
         <div class="sub-link">
-            <a href="/support" class="sublink">Enregistrer mon dispositif</a>
-             <a href="https://www.undefipourlavie.com/" class="sublink">undefipourlavie.com</a>
+            <a href="/enregistrement/formulaire" class="sublink">Enregistrer mon dispositif</a>
+        </div>
+      
+              <div class="sub-link unesko">
+             <a href="https://www.undefipourlavie.com/" class="sublink2">Visiter undefipourlavie.com</a>
         </div>
       
     </div>
+  
+  
+    <div class="sticky-bottom">
+    <div class="content2">
+      <p>Notre site utilise des cookies de données dépersonnalisées pour améliorer votre expérience. En continuant à naviguer sur ce site, vous acceptez l'utilisation des cookies.</p>
+      <button class="btnf" id="close-btn">Fermer</button>
+    </div>
+  </div>
 </body>
 </html>
 

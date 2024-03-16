@@ -175,18 +175,27 @@ line-height: 22px;
 }
 
 .btnf {
-  background-color: #007bff;
+  background-color: #3a88bd;
   color: #fff;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 10px;
-    margin-right: 10px;
+  cursor: pointer !important;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+            font-family: "Lato" !important;
+          font-weight: 500;
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-right: 20px;
+          padding-left: 20px;
+          text-align: center;
+        font-size: 16px;
+
 }
 
 .btnf:hover {
-  background-color: #0056b3;
+  background-color: #3179a8;
 }
     </style>
 </head>
@@ -205,12 +214,24 @@ line-height: 22px;
     </div>
   
   
-    <div class="sticky-bottom">
+  <div class="sticky-bottom" id="sticky-bottom">
     <div class="content2">
-      <p>Notre site utilise des cookies de données dépersonnalisées pour améliorer votre expérience. En continuant à naviguer sur ce site, vous acceptez l'utilisation des cookies.</p>
+      <p>Notre site utilise des cookies de données dépersonnalisées pour améliorer votre expérience. En continuant sur ce site, vous acceptez l'utilisation des cookies.</p>
       <button class="btnf" id="close-btn">Fermer</button>
     </div>
   </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const closeButton = document.getElementById('close-btn');
+      const stickyBottom = document.getElementById('sticky-bottom');
+
+      closeButton.addEventListener('click', function() {
+        stickyBottom.style.display = 'none';
+      });
+    });
+  </script>
+  
 </body>
 </html>
 
